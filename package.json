@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-netlify",
+  "name": "yes",
   "version": "1.0.0",
   "description": "A serverless function to process stripe payments with Nuxt, Netlify, and Lambda",
   "author": "sdras",
@@ -25,5 +25,19 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
-  }
+  },
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbify/kikuticouture.git"
+  },
+  "keywords": [
+    "beauty",
+    "salon"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatsbify/kikuticouture/issues"
+  },
+  "homepage": "https://github.com/gatsbify/kikuticouture#readme"
 }
