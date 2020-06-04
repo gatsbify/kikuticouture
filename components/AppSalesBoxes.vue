@@ -15,7 +15,7 @@ export default {
       boxes: [
         {
           icon: "/icon-package.svg",
-          heading: "Free Shipping Globally",
+          heading: "Free Shipping Countrywide",
           details: "Delivery in 4 Days"
         },
         {

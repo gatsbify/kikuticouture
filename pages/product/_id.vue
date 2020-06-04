@@ -13,11 +13,21 @@
           active-color="#000"
           style="margin: 5px 0"
         ></star-rating>
-        <h4 class="price">{{ product.price | dollar }}</h4>
+        <h4 class="price">{{ product.price | rand }}</h4>
         <p>{{ product.description }}</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit dolores repudiandae animi quidem, eveniet quod dolor facilis dicta eligendi ullam error. Assumenda in fugiat natus enim similique nam itaque.</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit
+          dolores repudiandae animi quidem, eveniet quod dolor facilis dicta
+          eligendi ullam error. Assumenda in fugiat natus enim similique nam
+          itaque.
+        </p>
         <p class="quantity">
-          <button class="update-num" @click="quantity > 0 ? quantity-- : quantity = 0">-</button>
+          <button
+            class="update-num"
+            @click="quantity > 0 ? quantity-- : (quantity = 0)"
+          >
+            -
+          </button>
           <input type="number" v-model="quantity" />
           <button class="update-num" @click="quantity++">+</button>
         </p>
@@ -44,7 +54,12 @@
         style="margin: 5px 0"
       ></star-rating>
       <p>{{ product.review }}</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto placeat consequatur voluptas sit mollitia ratione autem, atque sequi odio laborum, recusandae quia distinctio voluptatibus sint, quae aliquid possimus exercitationem.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto
+        placeat consequatur voluptas sit mollitia ratione autem, atque sequi
+        odio laborum, recusandae quia distinctio voluptatibus sint, quae aliquid
+        possimus exercitationem.
+      </p>
     </div>
     <app-featured-products />
   </div>
@@ -78,7 +93,7 @@ export default {
       let item = this.product;
       item.quantity = parseInt(this.quantity);
       this.tempcart.push(item);
-      this.$store.commit("addToCart", {...item});
+      this.$store.commit("addToCart", { ...item });
     }
   }
 };
